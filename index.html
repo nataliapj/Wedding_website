@@ -42,7 +42,7 @@
       padding: 48px 0;
       background:
         linear-gradient(rgba(42, 34, 29, 0.28), rgba(42, 34, 29, 0.28)),
-        url('foto1.jpeg') center/cover no-repeat;
+        url('foto-portada.jpg') center/cover no-repeat;
       color: white;
       text-align: center;
     }
@@ -346,10 +346,33 @@
       <a href="#detalles">Detalles</a>
       <a href="#lugares">Dónde será</a>
       <a href="#rsvp">RSVP</a>
+      <a href="#playlist">Playlist</a>
     </div>
   </nav>
 
   <main>
+    <section id="nosotros">
+      <div class="container">
+        <div class="section-card">
+          <h2>Sobre nosotros</h2>
+          <p class="section-intro">Aquí podéis contar brevemente vuestra historia: cómo os conocisteis, momentos importantes y por qué este día es tan especial para vosotros.</p>
+
+          <div style="max-width:700px;margin:0 auto 32px;line-height:1.8;text-align:center;color:var(--muted);">
+            Nos conocimos hace algunos años y desde entonces hemos compartido viajes, risas y muchos momentos inolvidables. Nos hace muchísima ilusión poder celebrar este día con todas las personas que queremos.
+          </div>
+
+          <h3 style="text-align:center;margin-bottom:18px;">Galería</h3>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
+            <img src="foto1.jpg" alt="Foto pareja 1" style="border-radius:14px;">
+            <img src="foto2.jpg" alt="Foto pareja 2" style="border-radius:14px;">
+            <img src="foto3.jpg" alt="Foto pareja 3" style="border-radius:14px;">
+            <img src="foto4.jpg" alt="Foto pareja 4" style="border-radius:14px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="detalles">
       <div class="container">
         <div class="section-card">
@@ -388,7 +411,7 @@
               <div class="venue-meta">
                 Iglesia de San Miguel<br>
                 Calle Ejemplo 14, Sevilla<br>
-                <a href="#">Añadir enlace de Google Maps</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Iglesia+de+San+Miguel+Sevilla" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
               </div>
             </article>
 
@@ -398,9 +421,56 @@
               <div class="venue-meta">
                 Finca Los Olivos<br>
                 Camino Ejemplo s/n, Sevilla<br>
-                <a href="#">Añadir enlace de Google Maps</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Finca+Los+Olivos+Sevilla" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
               </div>
             </article>
+          </div>
+        </div>
+
+          <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:28px;">
+            <div class="venue-card">
+              <h3>Iglesia · Mapa</h3>
+              <div style="border-radius:16px;overflow:hidden;border:1px solid var(--line);">
+                <iframe
+                  src="https://www.google.com/maps?q=Iglesia%20de%20San%20Miguel%20Sevilla&z=15&output=embed"
+                  width="100%"
+                  height="280"
+                  style="border:0;display:block;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <div class="venue-card">
+              <h3>Finca · Mapa</h3>
+              <div style="border-radius:16px;overflow:hidden;border:1px solid var(--line);">
+                <iframe
+                  src="https://www.google.com/maps?q=Finca%20Los%20Olivos%20Sevilla&z=15&output=embed"
+                  width="100%"
+                  height="280"
+                  style="border:0;display:block;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="playlist">
+      <div class="container">
+        <div class="section-card">
+          <h2>Nuestra playlist</h2>
+          <p class="section-intro">He añadido un acceso a una playlist compartida de Spotify. Solo tienes que reemplazar el enlace de ejemplo por el vuestro.</p>
+
+          <div style="max-width:760px;margin:0 auto;text-align:center;">
+            <a href="https://open.spotify.com/playlist/xxxxxxxxxxxxxxxxxxxxxx" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:14px 26px;border-radius:999px;margin-bottom:22px;">Abrir playlist en Spotify</a>
+            <div style="border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#fff;">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/xxxxxxxxxxxxxxxxxxxxxx?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
           </div>
         </div>
       </div>
