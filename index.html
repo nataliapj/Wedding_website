@@ -42,7 +42,7 @@
       padding: 48px 0;
       background:
         linear-gradient(rgba(42, 34, 29, 0.28), rgba(42, 34, 29, 0.28)),
-        url('foto1.jpeg') center/cover no-repeat;
+        url('foto-portada.jpg') center/cover no-repeat;
       color: white;
       text-align: center;
     }
@@ -318,7 +318,7 @@
     <div class="hero-card">
       <div class="eyebrow">Nos casamos</div>
       <h1>Lucía &amp; Daniel</h1>
-      <p>09 de Marzo de 2027 ·Madrid</p>
+      <p>20 de septiembre de 2026 · Sevilla</p>
 
       <div class="countdown" aria-label="Contador hasta la boda">
         <div class="countdown-item">
@@ -365,10 +365,10 @@
           <h3 style="text-align:center;margin-bottom:18px;">Galería</h3>
 
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
-            <img src="foto1.jpeg" alt="Foto pareja 1" style="border-radius:14px;">
-            <img src="foto2.jpeg" alt="Foto pareja 2" style="border-radius:14px;">
-            <img src="foto3.jpeg" alt="Foto pareja 3" style="border-radius:14px;">
-            <img src="foto1.jpeg" alt="Foto pareja 4" style="border-radius:14px;">
+            <img src="foto1.jpg" alt="Foto pareja 1" style="border-radius:14px;">
+            <img src="foto2.jpg" alt="Foto pareja 2" style="border-radius:14px;">
+            <img src="foto3.jpg" alt="Foto pareja 3" style="border-radius:14px;">
+            <img src="foto4.jpg" alt="Foto pareja 4" style="border-radius:14px;">
           </div>
         </div>
       </div>
@@ -382,7 +382,7 @@
 
           <div style="position:relative;max-width:900px;margin:0 auto;padding:30px 0 10px;">
             <svg viewBox="0 0 1000 160" preserveAspectRatio="none" style="position:absolute;top:70px;left:15%;right:15%;width:70%;height:120px;overflow:visible;">
-              <path d="M 20 90 C 160 -30, 260 -30, 380 90 S 640 210, 760 90 S 900 -30, 980 90" fill="none" stroke="var(--line)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 10"/>
+              <path d="M 20 80 C 140 20, 220 20, 340 80 S 540 140, 660 80 S 860 20, 980 80" fill="none" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/>
             </svg>
 
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;position:relative;z-index:1;">
@@ -458,12 +458,12 @@
       <div class="container">
         <div class="section-card">
           <h2>Nuestra playlist</h2>
-          <p class="section-intro">Para que disfrutemos todo lo que podamos, que nos ayudes a elegir la musica del gran dia. Hemos hecho una playlist colaborativa y podeis añadir vuestras canciones favoritas en ella pinchando en este link! </p>
+          <p class="section-intro">He añadido un acceso a una playlist compartida de Spotify. Solo tienes que reemplazar el enlace de ejemplo por el vuestro.</p>
 
           <div style="max-width:760px;margin:0 auto;text-align:center;">
-            <a href="https://open.spotify.com/playlist/0rugNBV9zu1I7aWRfrJXP4?si=a638faedf07b4e13&pt=a28e4eda4d94784b7e49ca7f01eea667" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:14px 26px;border-radius:999px;margin-bottom:22px;">Abrir playlist en Spotify</a>
+            <a href="https://open.spotify.com/playlist/xxxxxxxxxxxxxxxxxxxxxx" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:14px 26px;border-radius:999px;margin-bottom:22px;">Abrir playlist en Spotify</a>
             <div style="border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#fff;">
-              <iframe style="border-radius:12px" src="https://open.spotify.com/playlist/0rugNBV9zu1I7aWRfrJXP4?si=a638faedf07b4e13&pt=a28e4eda4d94784b7e49ca7f01eea667" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/xxxxxxxxxxxxxxxxxxxxxx?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
           </div>
         </div>
@@ -495,7 +495,7 @@
           <p class="section-intro">Rellena el formulario para confirmar si vienes. Este ejemplo funciona visualmente en la web; para recibir respuestas reales por email conviene conectarlo a Formspree, Netlify Forms o Google Forms.</p>
 
           <div class="rsvp-wrap">
-            <form id="rsvpForm" action="https://formspree.io/f/mzdjeonk" method="POST">
+            <form id="rsvpForm">
               <div class="field-row">
                 <label>
                   Nombre
@@ -532,28 +532,15 @@
                   <select name="invitados">
                     <option>1</option>
                     <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
                   </select>
                 </label>
               </div>
 
               <label>
-                Restricciones alimentarias
+                Restricciones alimentarias o notas
                 <textarea name="mensaje" placeholder="Alergias, menú vegetariano, observaciones..."></textarea>
-              </label>
-
-              <label>
-                  ¿Necesitas el servicio de autobuses?
-                  <select name="autobus" required>
-                    <option value="">Selecciona una opción</option>
-                    <option>Si</option>
-                    <option>No</option>
-                    <option>Solo ida</option>
-                    <option>Solo vuelta</option>
-                  </select>
-              </label>
-              <label>
-                Mensaje para los novios
-                <textarea name="mensaje" placeholder="Escribe lo que quieras para los novios..."></textarea>
               </label>
 
               <button type="submit">Enviar RSVP</button>
@@ -563,6 +550,12 @@
             <aside class="rsvp-info">
               <h3>Fecha límite</h3>
               <p class="small">Por favor, confirma tu asistencia antes del <strong>1 de agosto de 2026</strong>.</p>
+
+              <h3>Cómo activar respuestas reales</h3>
+              <p class="small">La forma más sencilla es conectar este formulario con un servicio como Formspree. Así, cuando un invitado envíe el formulario, recibirás la respuesta en tu correo sin programar backend.</p>
+
+              <h3>Qué puedes cambiar aquí</h3>
+              <p class="small">Puedes añadir campo de autobús, canción favorita, alojamiento o mensaje para los novios.</p>
             </aside>
           </div>
         </div>
@@ -575,7 +568,7 @@
   </footer>
 
   <script>
-    const weddingDate = new Date('2027-03-09T11:00:00');
+    const weddingDate = new Date('2026-09-20T17:00:00');
 
     function updateCountdown() {
       const now = new Date();
@@ -603,33 +596,14 @@
     updateCountdown();
     setInterval(updateCountdown, 1000);
 
-const form = document.getElementById('rsvpForm');
-const successMessage = document.getElementById('successMessage');
+    const form = document.getElementById('rsvpForm');
+    const successMessage = document.getElementById('successMessage');
 
-form.addEventListener('submit', async function(event) {
-  event.preventDefault();
-
-  const data = new FormData(form);
-
-  try {
-    const response = await fetch("https://formspree.io/f/mzdjeonk", {
-      method: "POST",
-      body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-
-    if (response.ok) {
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
       successMessage.style.display = 'block';
       form.reset();
-    } else {
-      alert("Hubo un problema al enviar el formulario.");
-    }
-  } catch (error) {
-    alert("Hubo un problema al enviar el formulario.");
-  }
-});
+    });
   </script>
 </body>
 </html>
