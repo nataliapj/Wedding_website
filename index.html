@@ -258,6 +258,18 @@
       resize: vertical;
     }
 
+    .select-uniform {
+      height: 58px;
+      min-height: 58px;
+    }
+
+    .deadline-box {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px;
+      background: linear-gradient(180deg, #fcf9f5, #f5ece2);
+    }
+
     button {
       border: 0;
       background: var(--accent);
@@ -521,15 +533,16 @@
               <div class="field-row">
                 <label>
                   ¿Asistirás?
-                  <select name="asistencia" required>
+                  <select name="asistencia" class="select-uniform" required>
                     <option value="">Selecciona una opción</option>
                     <option>Sí, asistiré</option>
                     <option>No podré asistir</option>
                   </select>
                 </label>
+
                 <label>
                   Número de invitados
-                  <select name="invitados">
+                  <select name="invitados" class="select-uniform">
                     <option>1</option>
                     <option>2</option>
                   </select>
@@ -539,7 +552,7 @@
               <div class="field-row">
                 <label>
                   ¿Necesitas el servicio de autobuses?
-                  <select name="autobus" required>
+                  <select name="autobus" class="select-uniform" required>
                     <option value="">Selecciona una opción</option>
                     <option>Si</option>
                     <option>No</option>
@@ -547,6 +560,7 @@
                     <option>Solo vuelta</option>
                   </select>
                 </label>
+
                 <label>
                   Restricciones alimentarias
                   <textarea name="alergias" placeholder="Alergias o necesidades alimentarias"></textarea>
@@ -557,14 +571,16 @@
               <div class="success-message" id="successMessage">Formulario enviado. Este mensaje es una demo local.</div>
             </form>
 
-            <aside class="rsvp-info">
+            <aside class="rsvp-info" style="background:#fff;border:none;padding:0;">
               <label>
                 Mensaje para los novios
                 <textarea name="mensaje" placeholder="Escribe lo que quieras..."></textarea>
               </label>
 
-              <h3>Fecha límite</h3>
-              <p class="small">Por favor, confirma tu asistencia antes del <strong>1 de agosto de 2026</strong>.</p>
+              <div class="deadline-box" style="margin-top:16px;">
+                <h3 style="margin-top:0;">Fecha límite</h3>
+                <p class="small">Por favor, confirma tu asistencia antes del <strong>1 de agosto de 2026</strong>.</p>
+              </div>
             </aside>
           </div>
         </div>
