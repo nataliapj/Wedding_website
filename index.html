@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Nuestra Boda</title>
+
+<style>
+body{
+    margin:0;
+    font-family: "Georgia", serif;
+    background:#f9f7f4;
+    color:#333;
+    text-align:center;
+}
+
+header{
+    background-image:url("foto-portada.jpg");
+    background-size:cover;
+    background-position:center;
+    height:70vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+header h1{
+    font-size:60px;
+    background:rgba(0,0,0,0.4);
+    padding:20px 40px;
+    border-radius:5px;
+}
+
+section{
+    max-width:800px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.details{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:10px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:6px;
+}
+
+footer{
+    margin-top:80px;
+    padding:30px;
+    background:#eee;
+    font-size:14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Ana & Carlos<br>12 Julio 2026</h1>
+</header>
+
+<section>
+<h2>Nuestra historia</h2>
+<p>
+Nos conocimos en la universidad y desde entonces nuestra historia ha estado llena de viajes, risas y momentos inolvidables.
+Estamos muy felices de celebrar este día con vosotros.
+</p>
+</section>
+
+<section class="details">
+<h2>Detalles del evento</h2>
+<p>
+Ceremonia<br>
+Iglesia de San Pedro<br>
+17:00
+</p>
+
+<p>
+Celebración<br>
+Finca El Olivar<br>
+19:00
+</p>
+</section>
+
+<section>
+<h2>Galería</h2>
+
+<div class="gallery">
+<img src="foto1.jpg">
+<img src="foto1.jpg">
+<img src="foto1.jpg">
+</div>
+
+</section>
+
+<section>
+<h2>Confirmar asistencia</h2>
+<p>
+Por favor confirma antes del 1 de junio.
+</p>
+
+<p>
+Email: boda@email.com
+</p>
+</section>
+
+<footer>
+<p>Con cariño, Ana & Carlos</p>
+</footer>
+
+</body>
+</html>
