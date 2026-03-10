@@ -42,7 +42,7 @@
       padding: 48px 0;
       background:
         linear-gradient(rgba(42, 34, 29, 0.28), rgba(42, 34, 29, 0.28)),
-        url('foto1.jpeg') center/cover no-repeat;
+        url('foto-portada.jpg') center/cover no-repeat;
       color: white;
       text-align: center;
     }
@@ -343,8 +343,8 @@
 
   <nav>
     <div class="container nav-inner">
-      <a href="#detalles">Detalles</a>
-      <a href="#lugares">Dónde será</a>
+      <a href="#detalles">Cronología</a>
+      <a href="#lugares">Cómo llegar</a>
       <a href="#rsvp">RSVP</a>
       <a href="#playlist">Playlist</a>
     </div>
@@ -364,10 +364,10 @@
           <h3 style="text-align:center;margin-bottom:18px;">Galería</h3>
 
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
-            <img src="foto1.jpeg" alt="Foto pareja 1" style="border-radius:14px;">
-            <img src="foto2.jpeg" alt="Foto pareja 2" style="border-radius:14px;">
-            <img src="foto3.jpeg" alt="Foto pareja 3" style="border-radius:14px;">
-            <img src="foto1.jpeg" alt="Foto pareja 4" style="border-radius:14px;">
+            <img src="foto1.jpg" alt="Foto pareja 1" style="border-radius:14px;">
+            <img src="foto2.jpg" alt="Foto pareja 2" style="border-radius:14px;">
+            <img src="foto3.jpg" alt="Foto pareja 3" style="border-radius:14px;">
+            <img src="foto4.jpg" alt="Foto pareja 4" style="border-radius:14px;">
           </div>
         </div>
       </div>
@@ -376,23 +376,31 @@
     <section id="detalles">
       <div class="container">
         <div class="section-card">
-          <h2>Detalles del día</h2>
-          <p class="section-intro">Aquí podéis añadir el horario de la ceremonia y la celebración, junto con cualquier indicación útil para los invitados.</p>
-          <div class="details-grid">
-            <article class="detail-box">
-              <h3>Ceremonia</h3>
-              <p><strong>Iglesia de San Miguel</strong></p>
-              <p>20 de septiembre de 2026</p>
-              <p>17:00 h</p>
-              <p>Calle Ejemplo 14, Sevilla</p>
-            </article>
-            <article class="detail-box">
-              <h3>Celebración</h3>
-              <p><strong>Finca Los Olivos</strong></p>
-              <p>20 de septiembre de 2026</p>
-              <p>19:30 h</p>
-              <p>Camino Ejemplo s/n, Sevilla</p>
-            </article>
+          <h2>Cronología del día</h2>
+          <p class="section-intro">Una línea temporal sencilla para mostrar el orden del día, uniendo la ceremonia con la celebración.</p>
+
+          <div style="position:relative;max-width:900px;margin:0 auto;padding:30px 0 10px;">
+            <div style="position:absolute;top:110px;left:15%;right:15%;height:2px;background:var(--line);"></div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;position:relative;z-index:1;">
+              <article style="text-align:center;">
+                <img src="iglesia.png" alt="Dibujo de la iglesia" style="width:100%;max-width:300px;margin:0 auto 18px;border-radius:16px;">
+                <h3 style="margin:0 0 8px;font-size:1.45rem;">Ceremonia</h3>
+                <p style="margin:0;color:var(--muted);line-height:1.7;">
+                  <strong>Iglesia de San Miguel</strong><br>
+                  17:00 h
+                </p>
+              </article>
+
+              <article style="text-align:center;">
+                <img src="venue.png" alt="Dibujo de la finca" style="width:100%;max-width:300px;margin:0 auto 18px;border-radius:16px;">
+                <h3 style="margin:0 0 8px;font-size:1.45rem;">Celebración</h3>
+                <p style="margin:0;color:var(--muted);line-height:1.7;">
+                  <strong>Finca Los Olivos</strong><br>
+                  19:30 h
+                </p>
+              </article>
+            </div>
           </div>
         </div>
       </div>
@@ -401,60 +409,43 @@
     <section id="lugares">
       <div class="container">
         <div class="section-card">
-          <h2>Dónde será la boda</h2>
-          <p class="section-intro">He dejado dos espacios pensados para colocar un dibujo o una ilustración de la iglesia y de la finca. Puedes sustituirlos por imágenes cuando las tengas.</p>
+          <h2>Cómo llegar</h2>
+          <p class="section-intro">Aquí puedes indicar el nombre de cada lugar, su dirección y un mapa interactivo. Al hacer clic en el mapa o en el enlace, los invitados pueden abrir la ubicación en Google Maps.</p>
 
-          <div class="venue-grid">
+          <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;">
             <article class="venue-card">
-              <img src="iglesia.png" alt="Dibujo de la iglesia" style="border-radius:16px;margin-bottom:16px;">
-              <h3>Iglesia</h3>
-              <div class="venue-meta">
-                Iglesia de San Miguel<br>
+              <h3>Iglesia de San Miguel</h3>
+              <div class="venue-meta" style="margin-bottom:14px;">
                 Calle Ejemplo 14, Sevilla<br>
-                <a href="https://www.google.com/maps/search/?api=1&query=Iglesia+de+San+Miguel+Sevilla" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Iglesia+de+San+Miguel+Sevilla" target="_blank" rel="noopener noreferrer">Abrir ubicación en Google Maps</a>
               </div>
-            </article>
-
-            <article class="venue-card">
-              <img src="venue.png" alt="Dibujo de la iglesia" style="border-radius:16px;margin-bottom:16px;">
-              <h3>Finca</h3>
-              <div class="venue-meta">
-                Finca Los Olivos<br>
-                Camino Ejemplo s/n, Sevilla<br>
-                <a href="https://www.google.com/maps/search/?api=1&query=Finca+Los+Olivos+Sevilla" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
-              </div>
-            </article>
-          </div>
-        </div>
-
-          <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:28px;">
-            <div class="venue-card">
-              <h3>Mapa de la iglesia: </h3>
-              <div style="border-radius:16px;overflow:hidden;border:1px solid var(--line);">
+              <a href="https://www.google.com/maps/search/?api=1&query=Iglesia+de+San+Miguel+Sevilla" target="_blank" rel="noopener noreferrer" style="display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line);text-decoration:none;">
                 <iframe
                   src="https://www.google.com/maps?q=Iglesia%20de%20San%20Miguel%20Sevilla&z=15&output=embed"
                   width="100%"
                   height="280"
-                  style="border:0;display:block;"
-                  allowfullscreen=""
+                  style="border:0;display:block;pointer-events:none;"
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
+              </a>
+            </article>
 
-            <div class="venue-card">
-              <h3>Mapa de la finca:</h3>
-              <div style="border-radius:16px;overflow:hidden;border:1px solid var(--line);">
+            <article class="venue-card">
+              <h3>Finca Los Olivos</h3>
+              <div class="venue-meta" style="margin-bottom:14px;">
+                Camino Ejemplo s/n, Sevilla<br>
+                <a href="https://www.google.com/maps/search/?api=1&query=Finca+Los+Olivos+Sevilla" target="_blank" rel="noopener noreferrer">Abrir ubicación en Google Maps</a>
+              </div>
+              <a href="https://www.google.com/maps/search/?api=1&query=Finca+Los+Olivos+Sevilla" target="_blank" rel="noopener noreferrer" style="display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line);text-decoration:none;">
                 <iframe
                   src="https://www.google.com/maps?q=Finca%20Los%20Olivos%20Sevilla&z=15&output=embed"
                   width="100%"
                   height="280"
-                  style="border:0;display:block;"
-                  allowfullscreen=""
+                  style="border:0;display:block;pointer-events:none;"
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
+              </a>
+            </article>
           </div>
         </div>
       </div>
@@ -595,3 +586,4 @@
   </script>
 </body>
 </html>
+
