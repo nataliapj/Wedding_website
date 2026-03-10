@@ -501,7 +501,6 @@
                   Nombre
                   <input type="text" name="nombre" placeholder="Tu nombre" required>
                 </label>
-
                 <label>
                   Apellidos
                   <input type="text" name="apellidos" placeholder="Tus apellidos" required>
@@ -513,7 +512,6 @@
                   Email
                   <input type="email" name="email" placeholder="tu@email.com" required>
                 </label>
-
                 <label>
                   Teléfono
                   <input type="tel" name="telefono" placeholder="Opcional">
@@ -529,7 +527,6 @@
                     <option>No podré asistir</option>
                   </select>
                 </label>
-
                 <label>
                   Número de invitados
                   <select name="invitados">
@@ -541,8 +538,8 @@
 
               <div class="field-row">
                 <label>
-                  ¿Necesitas autobús?
-                  <select name="autobus">
+                  ¿Necesitas el servicio de autobuses?
+                  <select name="autobus" required>
                     <option value="">Selecciona una opción</option>
                     <option>Si</option>
                     <option>No</option>
@@ -550,23 +547,22 @@
                     <option>Solo vuelta</option>
                   </select>
                 </label>
-
                 <label>
                   Restricciones alimentarias
                   <textarea name="alergias" placeholder="Alergias o necesidades alimentarias"></textarea>
                 </label>
               </div>
 
-              <label>
-                Mensaje para los novios
-                <textarea name="mensaje" placeholder="Escribe lo que quieras..."></textarea>
-              </label>
-
               <button type="submit">Enviar RSVP</button>
               <div class="success-message" id="successMessage">Formulario enviado. Este mensaje es una demo local.</div>
             </form>
 
             <aside class="rsvp-info">
+              <label>
+                Mensaje para los novios
+                <textarea name="mensaje" placeholder="Escribe lo que quieras..."></textarea>
+              </label>
+
               <h3>Fecha límite</h3>
               <p class="small">Por favor, confirma tu asistencia antes del <strong>1 de agosto de 2026</strong>.</p>
             </aside>
@@ -616,6 +612,10 @@
       event.preventDefault();
 
       const data = new FormData(form);
+      const messageField = document.querySelector('.rsvp-info textarea[name="mensaje"]');
+      if (messageField) {
+        data.append('mensaje', messageField.value);
+      }
 
       try {
         const response = await fetch("https://formspree.io/f/mzdjeonk", {
@@ -629,6 +629,7 @@
         if (response.ok) {
           successMessage.style.display = 'block';
           form.reset();
+          if (messageField) messageField.value = '';
         } else {
           alert("Hubo un problema al enviar el formulario.");
         }
