@@ -458,7 +458,7 @@
       <div class="container">
         <div class="section-card">
           <h2>Nuestra playlist</h2>
-          <p class="section-intro">He añadido un acceso a una playlist compartida de Spotify. Solo tienes que reemplazar el enlace de ejemplo por el vuestro.</p>
+          <p class="section-intro">Para que disfrutemos todo lo que podamos, que nos ayudes a elegir la musica del gran dia. Hemos hecho una playlist colaborativa y podeis añadir vuestras canciones favoritas en ella pinchando en este link! </p>
 
           <div style="max-width:760px;margin:0 auto;text-align:center;">
             <a href="https://open.spotify.com/playlist/0rugNBV9zu1I7aWRfrJXP4?si=a638faedf07b4e13&pt=a28e4eda4d94784b7e49ca7f01eea667" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:14px 26px;border-radius:999px;margin-bottom:22px;">Abrir playlist en Spotify</a>
@@ -532,15 +532,28 @@
                   <select name="invitados">
                     <option>1</option>
                     <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
                   </select>
                 </label>
               </div>
 
               <label>
-                Restricciones alimentarias o notas
+                Restricciones alimentarias
                 <textarea name="mensaje" placeholder="Alergias, menú vegetariano, observaciones..."></textarea>
+              </label>
+
+              <label>
+                  ¿Necesitas el servicio de autobuses?
+                  <select name="autobus" required>
+                    <option value="">Selecciona una opción</option>
+                    <option>Si</option>
+                    <option>No</option>
+                    <option>Solo ida</option>
+                    <option>Solo vuelta</option>
+                  </select>
+              </label>
+              <label>
+                Mensaje para los novios
+                <textarea name="mensaje" placeholder="Escribe lo que quieras para los novios..."></textarea>
               </label>
 
               <button type="submit">Enviar RSVP</button>
@@ -550,12 +563,6 @@
             <aside class="rsvp-info">
               <h3>Fecha límite</h3>
               <p class="small">Por favor, confirma tu asistencia antes del <strong>1 de agosto de 2026</strong>.</p>
-
-              <h3>Cómo activar respuestas reales</h3>
-              <p class="small">La forma más sencilla es conectar este formulario con un servicio como Formspree. Así, cuando un invitado envíe el formulario, recibirás la respuesta en tu correo sin programar backend.</p>
-
-              <h3>Qué puedes cambiar aquí</h3>
-              <p class="small">Puedes añadir campo de autobús, canción favorita, alojamiento o mensaje para los novios.</p>
             </aside>
           </div>
         </div>
