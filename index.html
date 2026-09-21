@@ -426,50 +426,101 @@ Podríamos no habernos cruzado nunca. Pero lo hicimos. Y, unos cuantos kilómetr
       </div>
     </section>
 
-    <section id="lugares">
-      <div class="container">
-        <div class="section-card">
-          <h2>Cómo llegar</h2>
-          <p class="section-intro">Aquí puedes indicar el nombre de cada lugar, su dirección y un mapa interactivo. Al hacer clic en el mapa o en el enlace, los invitados pueden abrir la ubicación en Google Maps.</p>
+<section id="lugares">
+  <div class="container">
+    <div class="section-card">
+      <h2>Cómo llegar</h2>
 
-          <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;">
-            <article class="venue-card">
-              <h3>Parroquia de Santo Domingo de la calzada</h3>
-              <div class="venue-meta" style="margin-bottom:14px;">
-                Calle Ejemplo 14, Sevilla<br>
-                <a href="https://www.google.com/maps/search/?api=1&query=Iglesia+de+San+Miguel+Sevilla" target="_blank" rel="noopener noreferrer">Abrir ubicación en Google Maps</a>
-              </div>
-              <a href="https://www.google.com/maps/search/?api=1&query=Iglesia+de+San+Miguel+Sevilla" target="_blank" rel="noopener noreferrer" style="display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line);text-decoration:none;">
-                <iframe
-                  src="https://www.google.com/maps?q=Iglesia%20de%20San%20Miguel%20Sevilla&z=15&output=embed"
-                  width="100%"
-                  height="280"
-                  style="border:0;display:block;pointer-events:none;"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </a>
-            </article>
+      <p class="section-intro">
+        Aquí encontrarás las ubicaciones de la ceremonia y la celebración.
+        Puedes consultar el mapa o abrir directamente cada ubicación en Google Maps.
+      </p>
 
-            <article class="venue-card">
-              <h3>Finca Los Olivos</h3>
-              <div class="venue-meta" style="margin-bottom:14px;">
-                Camino Ejemplo s/n, Sevilla<br>
-                <a href="https://www.google.com/maps/search/?api=1&query=Finca+Los+Olivos+Sevilla" target="_blank" rel="noopener noreferrer">Abrir ubicación en Google Maps</a>
-              </div>
-              <a href="https://www.google.com/maps/search/?api=1&query=Finca+Los+Olivos+Sevilla" target="_blank" rel="noopener noreferrer" style="display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line);text-decoration:none;">
-                <iframe
-                  src="https://www.google.com/maps?q=Finca%20Los%20Olivos%20Sevilla&z=15&output=embed"
-                  width="100%"
-                  height="280"
-                  style="border:0;display:block;pointer-events:none;"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </a>
-            </article>
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;">
+
+        <!-- CEREMONIA -->
+        <article class="venue-card">
+          <h3>Parroquia de Santo Domingo de la Calzada</h3>
+
+          <div class="venue-meta" style="margin-bottom:14px;">
+            Avenida del Guadalix, 35<br>
+            28120 Santo Domingo, Algete, Madrid
+            <br>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Parroquia+Santo+Domingo+de+la+Calzada+Algete"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Abrir ubicación en Google Maps
+            </a>
           </div>
-        </div>
+
+          <div
+            style="
+              display:block;
+              border-radius:16px;
+              overflow:hidden;
+              border:1px solid var(--line);
+            "
+          >
+            <iframe
+              src="https://www.google.com/maps?q=Parroquia+Santo+Domingo+de+la+Calzada,+Avenida+del+Guadalix+35,+Algete,+Madrid&z=15&output=embed"
+              width="100%"
+              height="280"
+              style="border:0;display:block;"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa de la Parroquia de Santo Domingo de la Calzada"
+            ></iframe>
+          </div>
+        </article>
+
+
+        <!-- CELEBRACIÓN -->
+        <article class="venue-card">
+          <h3>Finca Peñarrubia de Araceli</h3>
+
+          <div class="venue-meta" style="margin-bottom:14px;">
+            Carretera de San Agustín del Guadalix a Colmenar Viejo, km 3<br>
+            28750 San Agustín del Guadalix, Madrid
+            <br>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Finca+Pe%C3%B1arrubia+de+Araceli"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Abrir ubicación en Google Maps
+            </a>
+          </div>
+
+          <div
+            style="
+              display:block;
+              border-radius:16px;
+              overflow:hidden;
+              border:1px solid var(--line);
+            "
+          >
+            <iframe
+              src="https://www.google.com/maps?q=40.6797187,-3.6408456&z=15&output=embed"
+              width="100%"
+              height="280"
+              style="border:0;display:block;"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa de Finca Peñarrubia de Araceli"
+            ></iframe>
+          </div>
+        </article>
+
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <section id="playlist">
       <div class="container">
