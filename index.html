@@ -325,6 +325,7 @@
       .countdown { grid-template-columns: repeat(2, minmax(80px, 1fr)); }
     }
   </style>
+  
 </head>
 <body>
   <header class="hero" id="inicio">
@@ -558,85 +559,116 @@
       <div class="container">
         <div class="section-card">
           <h2>Confirmación de asistencia</h2>
-
+    
           <div class="rsvp-wrap">
-            <form id="rsvpForm" action="https://formspree.io/f/xoeeabdp" method="POST">
-
-              <div class="field-row">
+            <form
+              id="rsvpForm"
+              action="https://formspree.io/f/xoeeabdp"
+              method="POST"
+            >
+              <div class="rsvp-grid">
                 <label>
-                  Nombre
-                  <input type="text" name="nombre" placeholder="Tu nombre" required>
+                  <span>Nombre</span>
+                  <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    required
+                  >
                 </label>
+    
                 <label>
-                  Apellidos
-                  <input type="text" name="apellidos" placeholder="Tus apellidos" required>
+                  <span>Apellidos</span>
+                  <input
+                    type="text"
+                    name="apellidos"
+                    placeholder="Tus apellidos"
+                    required
+                  >
                 </label>
-              </div>
-
-              <div class="field-row">
+    
                 <label>
-                  Email
-                  <input type="email" name="email" placeholder="tu@email.com" required>
+                  <span>Email</span>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    required
+                  >
                 </label>
+    
                 <label>
-                  Teléfono
-                  <input type="tel" name="telefono" placeholder="Opcional">
+                  <span>Teléfono</span>
+                  <input
+                    type="tel"
+                    name="telefono"
+                    placeholder="Opcional"
+                  >
                 </label>
-              </div>
-
-              <div class="field-row">
+    
                 <label>
-                  ¿Asistirás?
+                  <span>¿Asistirás?</span>
                   <select name="asistencia" class="select-uniform" required>
                     <option value="">Selecciona una opción</option>
                     <option>Sí, asistiré</option>
                     <option>No podré asistir</option>
                   </select>
                 </label>
-              </div>
-
-              <div class="field-row">
+    
                 <label>
-                  En caso de que finalmente organicemos servicio de autobuses, ¿lo necesitarías?
+                  <span>Si organizamos autobuses, ¿los necesitarías?</span>
                   <select name="autobus" class="select-uniform" required>
                     <option value="">Selecciona una opción</option>
                     <option>Sí</option>
                     <option>No</option>
                   </select>
                 </label>
-
+    
                 <label>
-                  Restricciones alimentarias
-                  <textarea name="alergias" placeholder="Alergias o necesidades alimentarias"></textarea>
-                </label>
-
-                <label>
-                  Mensaje para los novios
-                  <textarea name="mensaje" placeholder="Escribe lo que quieras..."></textarea>
-                </label>
-                
-                <label>
-                  ¿Que plato principal prefieres?
-                  <select name="platoprincipal" class="select-uniform" required>
+                  <span>¿Qué prefieres de plato principal?</span>
+                  <select
+                    name="platoprincipal"
+                    class="select-uniform"
+                    required
+                  >
                     <option value="">Selecciona una opción</option>
                     <option>Carne</option>
                     <option>Pescado</option>
                   </select>
-                </label>    
-                
+                </label>
+    
+                <label>
+                  <span>Restricciones alimentarias</span>
+                  <input
+                    type="text"
+                    name="alergias"
+                    placeholder="Alergias o necesidades alimentarias"
+                  >
+                </label>
+    
+                <label class="full-width">
+                  <span>Mensaje para los novios</span>
+                  <textarea
+                    name="mensaje"
+                    placeholder="Escribe lo que quieras..."
+                  ></textarea>
+                </label>
               </div>
+    
               <button type="submit">Enviar RSVP</button>
-              <div class="success-message" id="successMessage">Formulario enviado, muchas gracias. Va quedando menos!!!! </div>
-            </form>
-
-            <aside class="rsvp-info" style="background:#fff;border:none;padding:0;">
-
-
-              <div class="deadline-box" style="margin-top:16px;">
-                <h3 style="margin-top:0;">Fecha límite</h3>
-                <p class="small">Por favor, confirma tu asistencia antes del <strong>1 de Febrero de 2027</strong>.</p>
+    
+              <div class="success-message" id="successMessage">
+                ¡Formulario enviado, muchas gracias! ¡Ya queda menos!
               </div>
-            </aside>
+            </form>
+    
+            <div class="deadline-box">
+              <h3>Fecha límite</h3>
+              <p class="small">
+                Por favor, confirma tu asistencia antes del
+                <strong>1 de febrero de 2027</strong>.
+              </p>
+            </div>
           </div>
         </div>
       </div>
