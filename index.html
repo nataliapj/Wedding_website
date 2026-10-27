@@ -609,17 +609,28 @@
                   Restricciones alimentarias
                   <textarea name="alergias" placeholder="Alergias o necesidades alimentarias"></textarea>
                 </label>
-              </div>
 
+                <label>
+                  Mensaje para los novios
+                  <textarea name="mensaje" placeholder="Escribe lo que quieras..."></textarea>
+                </label>
+                
+                <label>
+                  ¿Que plato principal prefieres?
+                  <select name="platoprincipal" class="select-uniform" required>
+                    <option value="">Selecciona una opción</option>
+                    <option>Carne</option>
+                    <option>Pescado</option>
+                  </select>
+                </label>    
+                
+              </div>
               <button type="submit">Enviar RSVP</button>
               <div class="success-message" id="successMessage">Formulario enviado, muchas gracias. Va quedando menos!!!! </div>
             </form>
 
             <aside class="rsvp-info" style="background:#fff;border:none;padding:0;">
-              <label>
-                Mensaje para los novios
-                <textarea name="mensaje" placeholder="Escribe lo que quieras..."></textarea>
-              </label>
+
 
               <div class="deadline-box" style="margin-top:16px;">
                 <h3 style="margin-top:0;">Fecha límite</h3>
